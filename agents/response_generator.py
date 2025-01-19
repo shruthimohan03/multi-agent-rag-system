@@ -6,7 +6,7 @@ load_dotenv()  # Load the .env file
 
 # Get the API key from the environment variable
 api_key = os.getenv("GROQ_API_KEY")
-print(os.getenv("GROQ_API_KEY"))
+
 # Initialize the Groq client with the API key
 client = Groq(api_key=api_key)
 
