@@ -21,9 +21,6 @@ graph LR
     style QP fill:#f0f0f0,stroke:#333,stroke-width:2px,color:#333
     style DRR fill:#e0e0e0,stroke:#333,stroke-width:2px,color:#333
     style RG fill:#d0d0d0,stroke:#333,stroke-width:2px,color:#333
-vbnet
-Copy
-Edit
 ```
 
 ## AGENTS:
