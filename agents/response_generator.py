@@ -20,7 +20,8 @@ def response_generator(top_docs, query):
     content = " ".join(
         (documents_folder / top_docs[0]).read_text(encoding="utf-8", errors="ignore") 
     )
-
+    content=content[:10000]
+    print(type(content))
     # Format the prompt using f-strings for clarity
     prompt = (
         f"You are a question answering system. The given question is: {query}. "
