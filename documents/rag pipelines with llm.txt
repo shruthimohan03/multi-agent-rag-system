@@ -1,0 +1,121 @@
+Building Enterprise RAG Pipelines with Small, Specialized Models
+llmware provides a unified framework for building LLM-based applications (e.g., RAG, Agents), using small, specialized models that can be deployed privately, integrated with enterprise knowledge sources safely and securely, and cost-effectively tuned and adapted for any business process.
+
+llmware has two main components:
+
+RAG Pipeline - integrated components for the full lifecycle of connecting knowledge sources to generative AI models; and
+
+50+ small, specialized models fine-tuned for key tasks in enterprise process automation, including fact-based question-answering, classification, summarization, and extraction.
+
+By bringing together both of these components, along with integrating leading open source models and underlying technologies, llmware offers a comprehensive set of tools to rapidly build knowledge-based enterprise LLM applications.
+
+Most of our examples can be run without a GPU server - get started right away on your laptop.
+
+Join us on Discord | Watch Youtube Tutorials | Explore our Model Families on Huggingface
+
+New to Agents? Check out the Agent Fast Start series
+
+New to RAG? Check out the Fast Start video series
+
+🔥🔥🔥 Multi-Model Agents with SLIM Models - Intro-Video 🔥🔥🔥
+
+Intro to SLIM Function Call Models
+Can't wait? Get SLIMs right away:
+
+from llmware.models import ModelCatalog
+
+ModelCatalog().get_llm_toolkit()  # get all SLIM models, delivered as small, fast quantized tools 
+ModelCatalog().tool_test_run("slim-sentiment-tool") # see the model in action with test script included  
+🎯 Key features
+Writing code withllmware is based on a few main concepts:
+
+Model Catalog: Access all models the same way with easy lookup, regardless of underlying implementation.
+Library: ingest, organize and index a collection of knowledge at scale - Parse, Text Chunk and Embed.
+Query: query libraries with mix of text, semantic, hybrid, metadata, and custom filters.
+from llmware.retrieval import Query
+from llmware.library import Library
+
+#   step 1 - load the previously created library 
+lib = Library().load_library("my_library")
+
+#   step 2 - create a query object and pass the library
+q = Query(lib)
+
+#    step 3 - run lots of different queries  (many other options in the examples)
+
+#    basic text query
+results1 = q.text_query("text query", result_count=20, exact_mode=False)
+
+#    semantic query
+results2 = q.semantic_query("semantic query", result_count=10)
+
+#    combining a text query restricted to only certain documents in the library and "exact" match to the query
+results3 = q.text_query_with_document_filter("new query", {"file_name": "selected file name"}, exact_mode=True)
+
+#   to apply a specific embedding (if multiple on library), pass the names when creating the query object
+q2 = Query(lib, embedding_model_name="mini_lm_sbert", vector_db="milvus")
+results4 = q2.semantic_query("new semantic query")
+Prompt with Sources: the easiest way to combine knowledge retrieval with a LLM inference.
+RAG-Optimized Models - 1-7B parameter models designed for RAG workflow integration and running locally.
+Simple-to-Scale Database Options - integrated data stores from laptop to parallelized cluster.
+🔥 Agents with Function Calls and SLIM Models 🔥
+🚀 Start coding - Quick Start for RAG 🚀
+🔥 Latest Enhancements and Features 🔥
+Model Capabilities & Benchmarks
+Benchmarking Small Model Capabilities
+Explore the latest benchmark results for small language models focusing on accuracy and enterprise use cases.
+Read benchmark results
+Example code for model ranking
+New Models and Functionality
+Qwen2 Models for RAG, Function Calling, and Chat
+Start using Qwen2 models quickly with resources for Retrieval-Augmented Generation (RAG), function calling, and chat functionalities.
+
+Quickstart example
+Phi-3 Function Calling Models
+Get started in minutes with Phi-3 models designed for function calling.
+
+Quickstart example
+New Use Cases & Applications
+BizBot: RAG + SQL Local Chatbot
+Implement a local chatbot for business intelligence using RAG and SQL.
+
+Code example | Demo video
+Lecture Tool
+Enables Q&A on voice recordings for education and lecture analysis.
+
+Lecture tool code
+Web Services for Financial Research
+An end-to-end example demonstrating web services with agent calls for financial research.
+
+Demo video | Code example
+Audio & Text Processing
+Voice Transcription with WhisperCPP
+Start transcription projects with WhisperCPP, featuring tools for sample file usage and famous speeches.
+
+Getting started guide | Parsing great speeches | Demo video
+Natural Language Query to CSV
+Convert natural language queries to CSV with Slim-SQL, supporting custom Postgres tables.
+
+Demo video | End-to-end example | Custom table usage
+Multi-Model Agents
+Multi-Model Agents with SLIM
+Use SLIM models on CPU for multi-step agents in complex workflows.
+Demo video | Example directory
+Document & OCR Processing
+OCR Embedded Document Images
+Extract text systematically from images embedded in documents for enhanced document processing.
+
+OCR example
+Enhanced Document Parsing for PDFs, Word, PowerPoint, and Excel
+Improved text-chunking controls, table extraction, and content parsing.
+
+Parsing example
+Deployment & Optimization
+Agent Inference Server
+Set up an inference server for multi-model agents to optimize deployments.
+
+Server setup example
+Optimizing Accuracy of RAG Prompts
+Tutorials for tuning RAG prompt settings for increased accuracy.
+
+Settings example | Videos: Part I, Part II

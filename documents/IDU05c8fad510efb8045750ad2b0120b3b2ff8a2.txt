@@ -1,0 +1,1098 @@
+                 Technology & Innovation Lab
+                                Korea Office
+
+
+
+EMERGING
+TECHNOLOGIES
+CURATION SERIES
+Issue #5:
+Generative Artificial Intelligence
+ACKNOWLEDGEMENTS
+WB Korea Office
+Jason Michael Allford (Special Representative)
+WBG, Information Technology Solutions, Technology and Innovation Lab (ITSTI)
+Yusuf Karacaoglu (Director and Senior Advisor), Stela Mocan (Manager), Jinhee Park (IT
+Officer), Yongdae Kim (IT Officer), Yusaku Kawashima (Senior IT Officer)
+
+
+
+
+© 2023 The World Bank
+1818 H Street NW
+Washington DC 20433
+Telephone: 202-473-1000
+Internet: www.worldbank.org
+This work is a product of the staff of The World Bank with external contributions. The findings,
+interpretations, and conclusions expressed in this work do not necessarily reflect the views of The
+World Bank, its Board of Executive Directors, or the governments they represent.
+The World Bank does not guarantee the accuracy of the data included in this work. The
+boundaries, colors, denominations, and other information shown on any map in this work do not
+imply any judgment on the part of The World Bank concerning the legal status of any territory or
+the endorsement or acceptance of such boundaries.
+
+Rights and Permissions
+The material in this work is subject to copyright. Because The World Bank encourages dissemination
+of its knowledge, this work may be reproduced, in whole or in part, for noncommercial purposes
+as long as full attribution to this work is given.
+Any queries on rights and licenses, including subsidiary rights, should be addressed to World Bank
+Publications, The World Bank Group, 1818 H Street NW, Washington, DC 20433, USA; fax: 202-
+522-2625; e-mail: pubrights@worldbank.org.
+                 Technology & Innovation Lab
+                                Korea Office
+
+
+
+EMERGING
+TECHNOLOGIES
+CURATION SERIES
+Issue #5:
+Generative Artificial Intelligence
+Contents
+
+Acronyms............................................................................................................... 5
+Introduction........................................................................................................... 6
+
+I.	    The Basics of Generative Artificial Intelligence.............................. 7
+
+II.	 Brief History of Generative AI...................................................... 10
+
+III.	 Types of Generative AI and How It Works.................................... 14
+      Explicit Density Models................................................................................ 15
+      Implicit Density Models............................................................................... 16
+
+iV.	 Benefits of Generative AI............................................................. 20
+      Creativity and Scalability ............................................................................. 21
+      Efficiency and Productivity........................................................................... 21
+
+V.	 Generative AI Applications in Industry......................................... 22
+      Health Care and Pharmaceuticals............................................................... 23
+      Manufacturing.............................................................................................. 24
+      Media, Art, and Entertainment.................................................................... 25
+      Fashion.......................................................................................................... 25
+      E-commerce and Marketing........................................................................ 26
+
+VI.	 Opportunities for International Development.............................. 27
+
+VII.	 Limitations and Considerations.................................................... 29
+
+VIII.	AI in Korea................................................................................... 32
+      Public Sector Initiatives................................................................................ 33
+        Korean Approach to AI................................................................................. 33
+           Strategies for and Approaches to Generative AI ........................................ 35
+      Private Sector Initiatives............................................................................... 36
+Acronyms
+AI	       Artificial Intelligence
+BERT	     Bidirectional Encoder Representations from Transformers
+RoBERT	   Robustly Optimized BERT
+CLIP 	    Contrastive Language Image Pre-training
+GAN	      Generative Adversarial Network
+GPT	      Generative Pretrained Transformer
+LLM	      Large Language Model
+MCST	     Ministry of Culture, Sports, and Tourism
+MSIT	     Ministry of Science and ICT
+MTIE	     Ministry of Trade, Industry Energy
+NLP	      Natural Language Processing
+SOC	      Social Overhead Capital
+GSN	      Generative Stochastic Network
+CNN	      Convolutional Neural Network
+RNN	      Recurrent Neural Network
+NADE	     Neural Autoregressive Density Estimator
+MADE	     Masked Autoencoder for Distribution Estimation
+VAE	      Variational Autoencoders
+RMF	      Risk Management Framework
+CVPR	     Computer Vision and Pattern Recognition
+ADA	      Adaptive Discriminator Augmentation
+DNA	      Deoxyribonucleic Acid
+                                                         INTRODUCTION
+
+                       Generative artificial intelligence (AI) has been developing rapidly and has attracted
+                       significant attention in recent years, with numerous advances and breakthroughs.
+                       The generative AI market is expected to grow from $1.5 billion in 2021 to $6.5
+                       billion by 2026—a compound annual growth rate of 34.9 percent.1
+
+                       Acknowledging the growing importance of generative AI in research and practical
+                       applications, including its use to solve international development challenges, this
+                       report provides a comprehensive overview of generative AI, introduces the basics,
+                       explains its development over time, and examines its types and applications. After
+                       highlighting the benefits and capabilities of generative AI, the report explores how
+                       it can be applied in various industries such as health care, manufacturing, media,
+                       and entertainment and then discusses potential opportunities and limitations
+                       users must consider. Finally, it describes initiatives and strategies that the Korean
+                       government and private sector players have implemented to adopt and advance
+                       generative AI in Korea and the global marketplace.
+
+                       The fifth issue in the Emerging Technology series, “Generative AI” is the result of
+                       a collaboration effort of the World Bank Group Information Technology Solutions
+                       Technology and the World Bank Korea Country Office. The series captures
+                       new technology and trends and shares knowledge to help solve international
+                       development challenges.
+
+
+                       1	   MarketsandMarkets. “Generative AI Market Size, Trends, Drivers, Opportunities & Global Forecast - 2030.” https://
+                            www.marketsandmarkets.com/Market-Reports/generative-ai-market-142870584.html?gclid=Cj0KCQjwu-KiBhCsARIs-
+                            APztUF0gXS7BeDcvYDNoFzfnFc2h8SwFE1eGogR5ZrF-YGrVmYpjmpuxEwcaAq1OEALw_wcB.
+
+
+
+
+6   Emerging Technologies Curation Series | Generative Artificial Intelligence
+I.
+THE BASICS OF
+GENERATIVE
+ARTIFICIAL
+INTELLIGENCE
+                G
+                        artner, Inc. announced the keyword “generative artificial intel-
+                        ligence (AI)” as a top strategic technology trend in strategic
+                        technology for 20221 and predicted that, by 2025, generative AI
+                will generate 10 percent of all data, up from less than 1 percent currently.
+                Generative AI is a disruptive machine-learning algorithm that learns about
+                content from data and uses it to produce creative, realistic, completely
+                new outputs. It is not a technology that works only in a world with a lot
+                of data, which data-driven AI is good at; it can create new things from
+                a small amount of information and can be used in various fields and for
+                various applications.
+                      •	 Art and design: Generative AI creates unique, diverse artwork such as digital paintings,
+                         three-dimensional designs, and animation. OpenAI’s DALLE2 and Stabiilty.AI’s Stable
+                         Diffusion are popular examples of such domains. Lexica.art is a web site that collects
+                         images created using generative AI by Stable Diffusion (Figure 1).2
+                      •	 Music: AI algorithms can generate music tracks using input data and user preferences
+                         and can analyze existing music data, understand patterns and structure, and generate
+                         music that aligns with user preferences and specific criteria such as genre, style, or
+                         mood.
+                      •	 Text: Generative AI can produce content, creating articles, stories, poetry, and
+                         programming code and can be used to generate automated responses to customer
+                         inquiries for customer service. ChatGPT (generative pretrained transformer) from
+                         OpenAI is a popular example of this application.3
+                      •	 Speech: Generative AI can take content and create appropriate voice audio. The user
+                         inputs text, and AI converts it to voice in real time. The generated speech can be used
+                         for various purposes, including voice response systems and virtual assistants. Unlike
+                         traditional text-to-speech systems, it generates more–natural sounding,-expressive
+                         speech.4
+
+                1	    Gartner. 2021. “Gartner Identifies the Top Strategic Technology Trends for 2022.” https://www.gartner.com/en/newsroom/press-re-
+                      leases/2021-10-18-gartner-identifies-the-top-strategic-technology-trends-for-2022.
+                2	    Lexica.art. https://lexica.art/.
+                3	    OpenAI. “Introducing ChatGPT” https://openai.com/blog/chatgpt/
+                4	    WellSaid Labs. https://wellsaidlabs.com/
+
+
+
+8   Emerging Technologies Curation Series | Generative Artificial Intelligence
+ FIGURE 1.
+ IMAGES CREATED USING GENERATIVE ARTIFICIAL INTELLIGENCE
+
+
+
+
+Source: Lexica.ar.
+
+
+
+
+                                            I.The Basics of Generative Artificial Intelligence   9
+II.
+BRIEF
+HISTORY OF
+GENERATIVE AI
+G
+        enerative AI was developed beginning in the 1950s and the 1960s,
+        when computer graphics systems began to be developed using
+        traditional statistical models, such as Markov models and Monte
+Carlo simulations. Ian Goodfellow and colleagues introduced the generative
+adversarial network (GAN) in 2014, which has become one of the most
+popular and successful generative models.5 After that, the public became
+aware of generative AI. Turing Award–winning computer scientist Yann
+LeCun described GAN models as “the most interesting idea in the last
+ten years in Machine Learning.”
+Progress in generative AI has continued rapidly, fueled by the availability of more-extensive,
+more-diverse data sets, better algorithms, and more-powerful computer hardware. Generative
+AI is used for many applications, including image and video synthesis, speech synthesis, and
+language generation. It remains an active research area, with new models and applications
+being developed constantly.
+In 2017, the transformer model,6—a groundbreaking method in the field of natural language
+processing—was proposed. Large language models (LLMs) such as GPT3, RoBERT, Gopher,
+and BERT started to gain widespread popularity and adoption.7 LLMs are a type of neural
+network model that are called LLMs because of their size. A language model usually consists
+of hundreds of billions of parameters. Because of the model’s size, it can learn about complex
+relationships between words and phrases in the input text. For example, BERT had about 340
+million parameters. OpenAI’s GPT-2 (introduced in 2019) has 1.5 billion parameters, and GPT-3
+(introduced in 2020) has 175 billion. The size of these models determines their quality. A
+model with many parameters allows things to be done that could not be done before.8 These
+large models have achieved state-of-the-art performance on a wide range of natural language
+processing tasks (Figure 2). The natural language processing tasks encompass sentiment
+analysis, question answering, text summarization, text classification, text generation, and more.
+Since the initial development of LLMs, technology companies have developed super-LLMs.
+
+
+5	   Ian Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley, Sherjil Ozair, Aaron Courville, and Yoshua Bengio.
+     2014. “Generative Adversarial Networks.” https://arxiv.org/abs/1406.2661.
+6	   Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017.
+     “Attention Is All You Need.” Advances in Neural Information Processing Systems 30.
+7	   Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2018. “BERT: Pre-Training of Deep Bidirectional Transformers for
+     Language Understanding.” arXiv:1810.04805.
+8	   Jordi TORRES.AI. 2022. “Transformers: The Bigger, the Better,” https://towardsdatascience.com/transformers-the-bigger-the-better-
+     19f39f222ee3.
+
+
+
+
+                                                                                                                    II.Brief History of Generative AI   11
+                In 2021, OpenAI introduced DALL-E, a generative AI model that can create images from text.
+                It is based on the transformer model, like other LLMs, and is trained on a massive dataset
+                of images and textual descriptions so that it can learn to associate the two modalities in a
+                way that is capable of generating highly detailed, imaginative images that do not exist in the
+                real world. In 2022, Midjourney9 and Stable Diffusion,10 AI programs similar to DALL-E that
+                generate images from textual descriptions, were introduced. Midjourney is an independent
+                research lab whose service can be accessed using a Discord bot. It produces an image that
+                resembles a piece of art rather than a photograph. It can be used for free up to 25 times.
+
+
+                 FIGURE 2.
+                 ARTIFICIAL INTELLIGENCE SYSTEM CAPABILITIES IN IMAGES
+                 AND LANGUAGE
+
+
+
+
+                Source: Douwe Kiela, Max Bartolo, Yixin Nie, Divyansh Kaushik, Atticus Geiger, Zhengxuan Wu, Bertie Vidgen,
+                Grusha Prasad, Amanpreet Singh, Pratik Ringshia, Zhiyi Ma, Tristan Thrush, Sebastian Riedel, Zeerak Waseem,
+                Pontus Stenetorp, Robin Jia, Mohit Bansal, Christopher Potts, Adina Williams. 2021. “Dynabench: Rethinking
+                Benchmarking in NLP” Proceedings of the 2021 Conference of the North American Chapter of the Association
+                for Computational Linguistics: Human Language Technologies, 4110–4124. https://aclanthology.org/2021.
+                naacl-main.324/.
+
+
+
+
+                9	    Midjourney. https://midjourney.com/
+                10	   Stable Diffusion. https://stablediffusionweb.com/
+
+
+
+
+12   Emerging Technologies Curation Series | Generative Artificial Intelligence
+ FIGURE 3.
+ INPUT AND OUTPUT OF TEXT-TO-IMAGE GENERATIVE ARTIFICIAL
+ INTELLIGENCE (AI) MODEL
+
+
+
+
+         “A Rocket                                           Text-to-image
+           with a                                         generative AI model
+         mountain”
+
+
+
+
+In 2022, Stability AI created Stable Diffusion, an open-source model; all information is shared
+so that individuals freely access and utilize the model as all information is openly shared
+Various models that researchers have tuned to suit their taste have also been published.11
+Because it is open source, anyone can download the trained dataset and build their own
+image-generation model. In this way, Stable Diffusion has created an environment in which
+developers and designers can easily apply image generative AI models, which has played a
+leading role in creating the current generative AI global trend.
+
+
+
+
+11	   Stable Diffusion Version2. https://github.com/Stability-AI/stablediffusion.
+
+
+
+
+                                                                                    II.Brief History of Generative AI   13
+III.
+TYPES OF
+GENERATIVE AI
+AND HOW IT
+WORKS
+I
+  an Goodfellow, who invented the GAN, has categorized generative
+  AI models into two categories based on how they model the target
+  data distribution. The criterion he used is how the model defines the
+probability density function for the target data distribution. According
+to the defined probability density function, one can generate new data
+by sampling from the data distribution. Explicit density models use the
+density function, and implicit density models do not. Implicit density
+models define a stochastic procedure that directly generates outputs.
+
+ FIGURE 4.
+ STRUCTURE OF GENERATIVE ARTIFICIAL INTELLIGENCE MODELS
+
+                                                                                                                 Direct
+                                                        GEN ERAT IVE M ODELS                                      GAN
+
+
+
+                                         Explicit density                              Implicit density
+
+
+                 Tractable density                             Approximate density                         Markov Chain
+
+          Fully Visible Belief Nets                                                                              GSN
+          • NADE
+                                                   Variational                         Markov Chain
+          • MADE
+          • PixelRNN/CNN                         Variational                       Boltzmann Machine
+          Change of variables                   Autoencoder
+          models (nonlinear ICA)
+
+Source: Ian Goodfellow, Tutorial on Generative Adversarial Networks
+
+
+
+
+Explicit Density Models
+Explicit density models define a density function for the data distribution, and then a sample
+is used from this density function to generate new outputs. Explicit density models can be
+divided into two sub-categories, depending on whether they are tractable density model
+or approximate density model.
+A variational autoencoders (VAE)12 is a popular example of this type of model. It consists
+of an encoder that maps input data to a reduced space (latent space) and a decoder that
+generates new data samples from data in a latent space. The latent space is typically chosen
+to be a lower-dimensional space than the input space and follows a multivariate gaussian
+distribution. During training, the encoder estimates the mean and the standard deviation of
+the latent space. After the training, the encoder is no longer used, and the estimated mean
+and standard deviation of the distribution are used to sample the latent variables, which
+are then passed through the decoder to generate a new output sample.
+
+12	   Diederik P. Kingma and Max Welling. 2013. “Auto-Encoding Variational Bayes.” https://arxiv.org/pdf/1312.6114.pdf.
+
+
+
+
+                                                                                                   III.Types of Generative AI and How It Works   15
+                 FIGURE 5.
+                 ARCHITECTURE OF A VARIATIONAL AUTOENCODER (VAE)
+
+
+
+                                                              μ
+
+                                                              σ
+
+                 Input Image           Encoder                          Latent Space     Decoder       Generated Image
+
+
+
+
+                Implicit Density Models
+                In contrast to explicit density models, implicit density models define an implicit represen-
+                tation of the data distribution and generate new outputs by transforming random noise into
+                samples that belong to the target distribution.
+                Examples of implicit density models include Generative Adversarial Networks (GANs), which
+                consist of a generator that produces data and a discriminator that distinguishes data (Figure 6).
+                The generator tries to fool the discriminator by generating data that look as much like real
+                data as possible, and the discriminator tries to distinguish between real and fake data. The
+                generator’s objective is to create data that are indistinguishable from the real data, and the
+                discriminator’s objective is to identify which data are real and which are fake. The inventor
+                of GAN, Ian Goodfellow, described this relationship as follows: “The generator is like counter-
+                feiters who are trying to mint fake money, and the discriminator is like a police officer who
+                distinguishes between fake and real money.”
+
+
+                 FIGURE 6.
+                 ARCHITECTURE OF A GENERATIVE ADVERSARIAL NETWORK
+
+
+
+
+                  Real Image                                                                           Fake or Real?
+
+
+
+
+                  Latent Space              Generator               Fake Image         Discriminator
+
+
+
+
+16   Emerging Technologies Curation Series | Generative Artificial Intelligence
+In the training phase, the discriminator is trained first, then the generator, and the process is
+repeated back and forth. The discriminator classifies real and fake data from the generator and
+is trained to be penalized for misclassifying real data as fake or fake data as real. This process
+allows the discriminator to classify real data as real and fake data as fake. Once a discriminator
+has been trained, the generator must be trained to fool the trained discriminator; fake data
+that the generator generates are fed into the discriminator, and the generator is trained to
+produce data that are similar enough to the real data to classify the fake data as real.
+As the training process is repeated, the discriminator and the generator evolve to perceive
+each other as hostile competitors. As a result, the generator can create fake data that is the
+same as real data, and the discriminator cannot distinguish between real and fake data. In
+other words, GAN is designed to compete with each other, with the generation model trying
+to reduce the probability of successful classification and the classification model trying to
+increase the probability of successful classification. In the end, data can be generated that
+look like real data using only the trained generator.
+Another example of an implicit density model is the diffusion model, which is the model
+behind stable diffusion that Stability AI introduced in 2022.13 The diffusion model is a deep
+generative model for generating data that uses a forward process (diffusion process) that
+adds noise to the data little by little to turn the data into complete noise and then uses a
+reverse process that gradually removes the noise to recover the original data (Figure 7).
+Stable Diffusion, the generation model of text to image using the diffusion model, has played
+an important role in the artistic and creative fields of AI.14
+
+
+ FIGURE 7.
+ DIFFUSION AND DENOISING PROCESS IN DIFFUSION MODEL
+
+
+
+
+Source: “CVPR 2022 Tutorial: Denoising Diffusion-based Generative Modeling: Foundations and Applications.”
+https://cvpr2022-tutorial-diffusion-models.github.io/.
+
+Stable Diffusion has three major components: contrastive language image pre-training, UNet,
+and variational autoencoders. When a user enters text, a text encoder (contrastive language
+image pre-training) converts the text into a language that UNet can understand, called a
+token, and UNet denoises randomly generated noise based on the token. Repeated denoising
+results in a proper image, and the variational autoencoder converts this image into pixels.
+The overall flow to generate an image is shown in Figure 8.
+
+
+
+13	   Robin Rombach, Andreas Blattmann, Dominik Lorenz, Patrick Esser, and Björn Ommer. 2022.”High-Resolution Image Synthesis with
+      Latent Diffusion Models.” Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. https://arxiv.org/
+      abs/2112.10752.
+14	   Alberto Rometo. 2022. “Stable Diffusion Is the Most Important AI Art Model Ever.” https://thealgorithmicbridge.substack.com/p/
+      stable-diffusion-is-the-most-important.
+
+
+
+                                                                                                   III.Types of Generative AI and How It Works   17
+                 FIGURE 8.
+                 ILLUSTRATED STABLE DIFFUSION
+
+
+                                                           Latent Seed                              User Prompt
+                                                       Gaussian noise ~N(0,1)               "An astronout riding a horse"
+
+
+
+                                                                           64×64
+                                                                                                       Frozen CLIP
+                                                                           latents
+                                                                                                      Text Encoder
+
+
+
+                                                                                                                77×768
+                                Scheduler                                                                       text embeddings
+                                algorithm                  Text conditioned
+                              "reconstruct"                  latent UNet
+
+
+
+
+                                       repeat N
+                                       scheduler steps                    64×64
+                                                                          conditioned latents
+
+
+
+
+                                                            Variational
+                                                       Autoencoder Decoder
+
+
+
+
+                                                                                   512×512
+                                                                                   output image
+
+
+
+
+                Source: Suraj Patil, Pedro Cuenca, Nathan Lambert, and Patrick von Platen. 2022. “Stable Diffusion with
+                Diffusers.” https://huggingface.co/blog/stable_diffusion.
+
+                Unlike conventional image-generation models, which use exponentially increasing resources
+                as the resolution increases, this model introduces autoencoders at the front and back to
+                remove noise in the latent space of much smaller dimensions instead of the entire image.
+                This allows for a drastic reduction in resource use, even for high-resolution images, making
+                it possible to use a general home graphics card. Before this development, text-to-image
+                models such as DALL-E and Midjourney were available only through cloud services; this
+                new approach is a departure from that proprietary model. As a result, individuals, rather
+                than companies, are creating many modified models and sharing them via Hugging Face
+                and others. They have also implemented and released a browser interface to make it easier
+                for people to generate these images.15
+
+                15	   “Stable Diffusion Web UI.” https://github.com/AUTOMATIC1111/stable-diffusion-webui.
+
+
+
+
+18   Emerging Technologies Curation Series | Generative Artificial Intelligence
+IV.
+BENEFITS OF
+GENERATIVE AI
+                Creativity and Scalability
+                Although overreliance on generative AI can limit creative thinking,16 generative AI can
+                benefit businesses and individuals in terms of creativity and scalability, enabling them to
+                produce innovative, personalized content. Users and businesses can generate new ideas and
+                concepts using generative AI, leading to new inventions and driving innovation. By providing
+                suggestions and alternatives, generative AI models can augment human creativity and help
+                users create text, images, and videos easily with their new ideas in a visually appealing way.
+                Inventions can be made by leveraging generative AI in such areas as synthesizing chemicals
+                and generating patterns.
+
+
+
+
+                Efficiency and Productivity
+                Generative AI can increase efficiency and automate time-consuming manual work. LLMs and
+                image models can be used to automate and identify patterns and generate personalized
+                content based on individual user preferences, allowing users and businesses to complete
+                tasks and achieve results more quickly and efficiently.
+                High-quality videos and images can be created with less effort than creating them manually.
+                Especially for nonprofessionals who have little knowledge of content generation, generative
+                AI can fill the gap and enable them to generate high-quality output without having to start
+                from zero. It democratizes the user experience, with nonprofessionals, researchers, and
+                developers engaging in user experience tasks without deep design training or education.
+                It can be used to identify and reduce noise in images and videos, increasing the overall
+                quality of the output of professional users as well. The images in Figure 9 were created in
+                less than 1 minute using the Midjourney platform with the input text: “Person floating in
+                space seeing the earth.”
+
+
+                 FIGURE 9. IMAGE CREATED USING MIDJOURNEY
+
+
+
+
+                Source: Midjourney
+
+                16	   Tyna Eloundou, Sam Manning, Pamela Mishkin, and Daniel Rock. “GPTs Are Gpts: An Early Look at the Labor Market Impact Potential of
+                      Large Language Models.” https://arxiv.org/abs/2303.10130.
+
+
+20   Emerging Technologies Curation Series | Generative Artificial Intelligence
+V.
+GENERATIVE AI
+APPLICATIONS IN
+INDUSTRY
+                There are various applications of generative AI, including image-to-image, text-to-image, and
+                photo-to-emoji conversion; image processing; film restoration; and text and audio synthesis.
+                These applications can then be tailored to and used in various industries and sectors. Venture
+                capital firms have invested more than $1.7 billion in generative AI technologies, with most
+                investments focused on AI-powered drug discovery and AI-assisted software development.17
+                Table 1 shows some generative AI use cases according to industry. Although initial foundation
+                models like ChatGPT concentrate on using generative AI to enhance creative tasks, the
+                applications will be expanded to real industry situations.
+
+
+                 TABLE 1.
+                 GENERATIVE ARTIFICIAL INTELLIGENCE USE CASES ACCORDING
+                 TO INDUSTRY
+                                                                                                    INDUSTRIES
+
+
+
+
+                                                                                 ARCHITECTURE AND
+
+
+
+
+                                                                                                                                                              PHARMACEUTICAL
+                                                       MANUFACTURING
+
+
+
+
+                                                                                                                              MANUFACTURING
+
+                                                                                                                                              MANUFACTURING
+                                                                                 ENGINEERING
+                                                       AUTOMOTIVE
+                                                       AND VEHICLE
+
+
+
+
+                                                                                                    ENERGY AND
+
+
+                                                                                                                 HEALTHCARE
+
+
+                                                                                                                              ELECTRONIC
+                                                                                                                 PROVIDERS
+
+
+                                                                                                                              PRODUCT
+                                                                                                    UTILITIES
+                                                                       MEDIA
+
+
+
+
+                 Drug Design
+                 Material Science
+                 Chip Design
+                 Synthetic Data
+                 Generative Design (Parts)
+                Source: Gartner
+
+
+
+
+                Health Care and
+                Pharmaceuticals
+                Generative AI can revolutionize how complex medical conditions are understood, diagnosed,
+                and treated and could increase the accuracy, efficiency, and effectiveness of the health care
+                system. The potential benefits of this technology include faster, more-effective treatment,
+                smoother processes, and lower costs for health care providers and patients. Ultimately,
+                generative AI has the potential to enhance patient outcomes and the overall quality of
+                health care delivery.18 Generative AI can create medical images, such as X-rays and computed
+                tomography and magnetic resonance imaging scans, increase accuracy and efficiency in
+
+                17	   Gartner_Inc. 2023. “Beyond Chatgpt: The Future of Generative AI for Enterprises.” https://www.gartner.com/en/articles/beyond-
+                      chatgpt-the-future-of-generative-ai-for-enterprises.
+                18	   Charles Aunger. 2023. “Council Post: CHATGPT, Machine Learning and Generative AI in Healthcare.” Forbes https://www.forbes.com/
+                      sites/forbestechcouncil/2023/03/07/chatgpt-machine-learning-and-generative-ai-in-healthcare/.
+
+
+
+22   Emerging Technologies Curation Series | Generative Artificial Intelligence
+medical imaging techniques, and detect abnormalities. Generative AI, including GANs, can
+create fake data after learning the properties of real data and produce synthesized data.
+Synthetic data, for example in Figure 10, shows the generation of fake chest X-rays using
+NVIDIA’s StyleGAN2-ADA model. Synthetic data have the potential to enlarge clinical research
+datasets and simultaneously protect patient privacy, enabling institutions to expand their
+data-sharing capabilities. Generative AI can accelerate creation of training materials and
+simulations for medical education, providing students with valuable learning resources.
+
+
+ FIGURE 10.
+ GENERATIVE ARTIFICIAL MODEL TO PRODUCE FAKE CHEST X-RAYS
+
+
+
+
+Source: Anmol Arora and Ananya Arora. 2022. “Generative Adversarial Networks and Synthetic Patient Data:
+Current Challenges and Future Perspectives.” Future Healthcare Journal 9 (2): 190–193. https://www.ncbi.nlm.
+nih.gov/pmc/articles/PMC9345230/.
+
+Generative AI can generate benefits for the pharmaceutical sector by streamlining drug
+discovery, helping develop pharmaceutical resources, and providing personalized medicine.
+For example, the variational autoencoder, a particular kind of generative model, is used to
+enable the new drug discovery process. Identifying potential drug candidates and conducting
+the testing based on AI simulations before moving to clinical, human, or animal trials can
+reduce the time and the cost of initial drug discovery and development of medicines.
+
+
+
+
+Manufacturing
+Generative AI can be used in manufacturing to develop components tailored to meet objectives
+and overcome limitations, used in improving performance, material selection, and production
+techniques. It has been beneficial in synthesizing new materials and chemicals similar to the
+original materials to produce the same level of perfection. AI has been gradually applied to
+manufacturing mainly in maintenance and quality control, although its use is expanding.
+Generative AI helps analyze big data from factories to identify patterns, predict behaviors
+and future production, and spot anomalies, which reduces risks and costs associated with
+production and increases efficiency. In a practical application, the BMW Group used automated
+image recognition powered using generative AI for a range of quality assessments and
+inspections. This enabled identification of pseudo-defects, which are variations that deviate
+from the desired target without any faults being indicated. Generative AI helped achieve
+accurate, efficient detection, ensuring high quality standards in the manufacturing processes.
+
+
+
+
+                                                                                 V.Generative AI Applications in Industry   23
+                Media, Art, and Entertainment
+                Generative AI is also being used in the media and art. People can generate images using
+                applications such as DALL·E 2 and Midjourney and create music with applications such as
+                AIVA and SOUNDRAW. One can choose a genre and the length of the music or write a detailed
+                prompt regarding what they want to draw. The French DJ David Guetta used generative AI to
+                add deepfake vocals in the style of Eminem to a recent song and announced, “the future of
+                music is in AI.”19 The music was not commercially released but indicated the impact that AI
+                will have on the music industry. Generative AI has also been affecting the gaming industry,
+                enabling the creation of personalized games and human-like characters. It is making gaming
+                development more efficient in many ways and improving quality.
+                In addition to creating content, generative AI is helping increase the resolution of video
+                and images. Legacy content that was recorded in low resolution can be remastered to high
+                resolution through noise removal and made sharper using generative AI. Images and videos
+                can be colorized to add realistic color to monochrome contents. Hollywood has adopted
+                Cuebric, the first generative AI system to produce and edit images for film and television.
+                Cuebric generates images from a stable diffusion model using the normal prompt interface
+                and provides a real cinematic background so that actors do not have to be on location to film.20
+
+
+
+                Fashion
+                Generative AI applications are being used to increase productivity, accelerate market entry,
+                and improve customer service in the fashion industry. Generative AI could add $150 billion
+                to $270 billion to the fashion industry, in particular by contributing to product innovation,
+                marketing and sales, and customer experience.21
+                Generative AI has great potential in product development. It can provide information about
+                fashion trends and individual preferences using multiple sources of consumer data, and
+                designers and their teams can design and test new items using it. For example, at the Fashion
+                X AI show in Hong Kong, the Laboratory for Artificial Intelligence in Design held a fashion
+                show featuring generative AI–supported designs. More than 80 outfits from 14 designers
+                were created with the help of an AI-based interactive design assistant.22 The consumer
+                experience can be improved using generative AI. Stitch Fix, a retail fashion brand, used AI to
+                recommend clothing to customers based on GPT-3 and Dall-E2 to boost sales and increase
+                customer satisfaction. DALL-E program visualizes the clothing based on requested preferences
+                such as color, fabric, and style.23
+
+
+                19	   British Broadcasting Company. “David Guetta Says the Future of Music Is in AI.” 2023. BBC News https://www.bbc.com/news/entertain-
+                      ment-arts-64624525.
+                20	   Tom Davenport. “Cuebric: Generative AI Comes to Hollywood.” 2023. Forbes https://www.forbes.com/sites/tomdav-
+                      enport/2023/03/13/cuebric-generative-ai-comes-to-hollywood/?sh=3e9689db174b.
+                21	   Holger Harreis, Theodora Koullias, Roger Roberts, and Kimberly Te. 2023. “Generative AI: Unlocking the Future of Fashion.” McKinsey &
+                      Company. https://www.mckinsey.com/industries/retail/our-insights/generative-ai-unlocking-the-future-of-fashion.
+                22	   “From Writing Articles to Helping Stroke Patients: Here Are 6 Updates from the World of Ai This Month.” World Economic Forum.
+                      https://www.weforum.org/agenda/2023/01/4-things-you-need-to-know-about-ai-january-2023/.
+                23	   Thomas H. Davenport and Nitin Mittal. 2022. “How Generative AI Is Changing Creative Work.” Harvard Business Reviewhttps://hbr.
+                      org/2022/11/how-generative-ai-is-changing-creative-work.
+
+
+
+24   Emerging Technologies Curation Series | Generative Artificial Intelligence
+E-commerce and Marketing
+Generative AI is affecting the e-commerce and marketing industry as well. It can help
+develop marketing strategy; produce marketing content and even virtual images or avatars
+for advertising; predict customer preferences by generating unseen but probable preference
+profiles; and identify patterns and trends in popular content, enabling it to generate new
+content that sticks to marketers’ logic.
+Generative AI can be used to create e-commerce materials such as flyers, advertising copy,
+and marketing materials. Although users must consider regulations and copyright when
+creating unique content, generative AI can be used to increase productivity and creativity.
+Companies providing generative AI text-generating services are growing. For example, the
+generative AI platform start-up Jasper helps users create copy and content tailored to their
+brand to improve the process and product,24 and the generative AI–based content-generating
+startup Copy.AI25 provides writing tools for blog content, digital advertising copy, e-commerce
+and sales copy, social media content, website copy, and more.
+
+
+
+
+24	   Jasper.AI. https://www.jasper.ai/.
+25	   Copy.AI. https://www.copy.ai/.
+
+
+
+                                                                       V.Generative AI Applications in Industry   25
+VI.
+OPPORTUNITIES FOR
+INTERNATIONAL
+DEVELOPMENT
+G
+        enerative AI holds great potential for addressing challenges in
+        international development. It has potential to improve disaster
+        relief and infrastructure development. Disaster relief involves
+a complex set of tools and processes that are used not only to reduce
+the number of lives lost during a disaster, but also to help communities
+become more resilient. Generative AI can be used to model the impact of
+natural disasters and help governments prepare for disasters by generating
+new patterns of disaster using generative AI. Text and voice generation
+can facilitate real-time updates and information dissemination during
+emergencies, ensuring efficient communication with affected populations.
+AI applications are widely used in health care to address development problems. Healthcare
+and life science companies use the applications to diagnose diseases, make treatment recom-
+mendations, discover new medicine, and increase patient engagement and adherence. As
+discussed in the previous section, Generative AI Applications in Industry, generative AI can
+generate synthetic medical images, aiding in the training and augmentation of datasets for
+medical imaging. Generative models can also be employed in drug discovery and molecular
+design, enabling researchers to explore new possibilities and accelerate development of
+life-saving medications. Text-generation capabilities can be used to educate patients.
+Generative AI can generate educational content such as quizzes, exercises, and interactive
+simulations, enhancing the learning experience for students; create personalized learning
+plans for any topic of interest; and recommend textbooks. Virtual tutors and language learning
+companions can be created using image- and voice-generation models, providing person-
+alized, adaptive learning experiences.
+Generative AI can conserve wildlife. An average reduction of 69 percent in species populations
+has been observed since 1970.26 Generative AI can predict and model ecological changes and
+population dynamics in a region of interest, helping researchers create accurate, proactive
+strategies to protect endangered species.
+Generative AI also has the potential to help solve development challenges in many areas, such
+as financial inclusion and human rights. It is rapidly evolving, and its capacity to contribute
+to global society is projected to grow considerably. The innovative use of generative AI to
+address the world’s most complex challenges is expected to increase.
+
+
+
+
+26	   World Wide Fund for Nature. 2022. “Living Planet Report 2022.” https://livingplanet.panda.org/en-US/.
+VII.
+LIMITATIONS AND
+CONSIDERATIONS
+O
+        ne limitation of traditional machine learning is that the algorithm
+        must be modified for the input data type, but since the 2000s,
+        when deep learning started gaining attention, it has been
+recognized for its ability to highlight and address these limitations, offering
+solutions that alleviate the need for extensive algorithm modification
+based on input date types. Generative AI has gained interest in recent
+years because of potential applications in various fields and technological
+breakthroughs.
+In April 2022, when DALL-E2 was released, it surprised people with dramatic quality improve-
+ments over DALL-E1. About four months later, Stability AI released Stable Diffusion, an
+all-open-source image-generation AI tool, and images generated using DALL-E2 began to
+spread on Twitter and other social media. The data used for training were also published
+as open source from the beginning, which spurred further development of generative AI
+technologies.
+Within five days of its release at the end of 2022, ChatGPT, conversational AI based on
+large-scale language models, had more than 1 million users; by January 2023, it had 100
+million users. ChatGPT is conversational AI that can answer questions and write poetry and
+even programming code in any language. There has been an overwhelming increase in the
+popularity of generative AI search keywords on Google since 2022, with two spikes in search
+volume in August and November of 2022, which is when Stable Diffusion and ChatGPT went
+public, respectively.
+
+
+ FIGURE 11.
+ GOOGLE TREND FOR GENERATIVE ARTIFICIAL
+ INTELLIGENCE KEYWORDS
+
+
+100
+
+
+ 75
+
+
+ 50                                                                    Note
+
+
+ 25
+
+
+Feb 25, 20               Ago 25, 2019               Feb 21, 2021                 Aug 21, 2022
+
+
+
+Generative AI has several limitations that are being recognized. For example, questions about
+ethics in AI have emerged as a response to the personal and societal harm that can result
+from such things as the negative consequences of misuse or abuse of AI systems, poor design,
+and learning from biased data. In particular, with AI that generates text, it is challenging to
+identify hateful or violent language data in the total data used for training because it is very
+small in proportion to other data and is mixed with slang. It is even more challenging to
+determine because it has different meanings depending on cultural background. Efforts are
+
+
+                                                                              VII.Limitations and Considerations   29
+                being made to address these concerns. Academia has also recognized these concerns, and
+                the number of ethics papers is increasing. This applies not only to generative AI but also to
+                AI in general, and AI can cause far-reaching damage, so it is necessary to seek appropriate
+                measures and devise appropriate plans.
+                Responsible use of AI will be an increasing focus for ChatGPT, especially when it is being
+                used in decision making and in products and services that affect people. Use of ChatGPT
+                raises many specific risks.27
+                Safe use means documenting risks and making sure that the organization using ChatGPT
+                is using AI responsibly for those outputs. ChatGPT use may fall under the responsible AI
+                paradigm and creating trustworthy AI. This includes involving human validation and maintaining
+                human in the loop during the lifecycle use. Implementing human validation in the process
+                is especially important with generative AI because ChatGPT may create untrue content,
+                known as hallucination. In addition, governance structures and mitigation measures must
+                be defined for proper, safe use to ensure transparency, accountability, and safety. Various
+                AI trustworthy frameworks, such as the National Institute of Standards and Technology Risk
+                Management Framework, may be used to mitigate risk.28
+
+
+
+
+                27	   “GPT4 System Card.” 2023. https://cdn.openai.com/papers/gpt-4-system-card.pdf?mc_cid=47c1f3eb5f&mc_eid=51768751d5.
+                28	   U.S. National Institute of Standards and Technology. 2023. “Artificial Intelligence Risk Management Framework (AI RMF 1.0).” https://
+                      nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf.
+
+
+
+30   Emerging Technologies Curation Series | Generative Artificial Intelligence
+VIII.
+AI IN KOREA
+                Public Sector Initiatives
+                Governments around the world have been adopting AI technology at an accelerating rate that
+                skyrocketed with the COVID-19 pandemic. Although there is still some uncertainty because
+                the technology is evolving, because of the advantages of the technology, governments are
+                increasing their investments. McKinsey Global Institute modeling of trends in AI adoption
+                revealed that AI has the potential to deliver additional global economic output of about $13
+                trillion by 2030, which would increase global gross domestic product by approximately 1.2
+                percent per year.29 There are many examples of global AI applications and use by governments
+                to improve social welfare, national health care systems, domestic security and surveillance,
+                and transportation. The Korean government has recognized the importance of adopting and
+                using AI and its significance of scaling digital initiatives.
+
+
+                KOREAN APPROACH TO AI
+                The Korean government released its national strategy for AI on December 17, 2019, with
+                the vision of Toward Global IT Leader, led by the Ministry of Science and Information and
+                Communications Technology. The strategy was formed based on the AI ecosystem, AI use, and
+                people-centered AI and consists of 100 government-wide action tasks under nine strategies
+                (Figure 12). Korea has announced the national AI strategy and presented the of achieving
+                digital competitiveness, creating positive economic effect and improving the quality of life
+                of its people by 2030.
+
+
+                 FIGURE 12. KOREAN NATIONAL ARTIFICIAL INTELLIGENCE (AI)STRATEGY
+
+
+
+
+                Source: Republic of Korea, Ministry of Science and ICT, National Strategy for Artificial Intelligence.
+
+                29	   Jacques Bughin, Jeongmin Seong, James Manyika, Michael Chui, and Raoul Joshi. 2018. “Notes from the AI Frontier: Modeling the
+                      Impact of AI on the World Economy.” Mckinsey Global Institute. https://www.mckinsey.com/featured-insights/artificial-intelligence/
+                      notes-from-the-ai-frontier-modeling-the-impact-of-ai-on-the-world-economy.
+
+
+32   Emerging Technologies Curation Series | Generative Artificial Intelligence
+The Ministry of Economy and Finance also announced National Strategy for Transformation
+called “the Korean New Deal Initiative” to share a national development strategy to support
+the country’s recovery from the pandemic. The plan is to invest 160 trillion won to create
+approximately 1.9 million jobs by 2025 based on the Digital New Deal and the Green New
+Deal, with the goal of building a digital economy and fostering innovation. Focus areas
+include integration of data, the 5G network, and AI (Figure 13) throughout the economy;
+digitalization of the education infrastructure; fostering and digitalization of social overhead
+capital (capital that the state owns that is used to produce goods and services that are not
+generally sold for money).
+
+
+ FIGURE 13.
+ KOREAN NEW DEAL DATA, 5G NETWORK, ARTIFICIAL INTELLIGENCE (AI)
+  (DNA) ECOSYSTEM
+
+
+
+
+Source: Republic of Korea, Ministry of Economy and Finance, Korean New Deal
+
+
+AI takes up a big part throughout the Digital New Deal. The government plans to build a
+data ecosystem and establish a data control tower for integrated management of public
+and private data. The goal is to disclose 142,0000 public data and collect 1,300 types of
+additional data for AI training. The plan is also designed to expand integration of AI into
+industries and make a smart government that uses AI. The Korean government created the
+Smart Korea Fund with 6 trillion won and provides vouchers for AI solutions to 3,400 small
+and medium-sized enterprises.
+With its New Deal strategy, Korea is expected to transform into the smarter country to use
+data and digital technologies, including AI, and leads the innovative public services.
+
+
+
+
+                                                                                            VIII.AI in Korea   33
+                STRATEGIES FOR AND APPROACHES TO
+                GENERATIVE AI
+                Use of generative AI is still in early stages, and its impact on society and the global market
+                will continue to grow. Governments are cognizant of the emergence of this technology and
+                have been working to understand the technology and devise strategies to adopt it.
+                Considering the risks and unknown potential of the technology, it is critical for policy makers
+                and public and private sector entities to consider the importance of establishing a solid
+                governance framework and ethics so that positive expansion of generative AI and goods
+                and services derived from the new technologies can be supported.30
+                The Korean government has been actively pursuing development and adoption of generative
+                AI technologies. According to the 2023 Master Plan for Research and Development Projects
+                in the Ministry of Science and ICT (MSIT) of the Republic of Korea, the government plans to
+                invest 6.41 trillion won in 2023 to support development of innovative digital technologies.
+                In February 2023, Minister Lee Jong-ho of the Ministry of Science and ICT Technology discussed
+                the trend and policy direction of ChatGPT with Korean AI companies and academic experts.
+                The AI-data subcommittee discussed the potential of ChatGPT programs that can be used
+                in government work, such as for writing emails, press releases, and social network service
+                publicity texts targeted to government employees.31 The ministry reported that “the AI policies
+                that the Korean government established so far, such as data platform, computing resources,
+                and AI R&D support, will serve as a foundation for the growth of the giant AI industry.”32
+                The Ministry of Culture, Sports, and Tourism (MCST) announced the official launch of three
+                working groups to prepare the cultural, institutional, and industrial foundation that generative
+                AI and ChatGPT will bring. In particular, the focus will be on improving the copyright system,
+                learning the Korean text corpus for Korean proficiency of AI, and using AI in content creation
+                and industry applications.
+                Because there is a no existing governance system or regulations regarding generative AI,
+                especially for content that ChatGPT has created, the copyright system improvement working
+                group is working to look into the copyrighted works for AI learning data, identify legal status
+                of AI outputs and recognition in the copyright system, and examine copyright infringement
+                and regulations.
+
+
+
+
+                30	   Benjamin Larsen and Jayant Narayan. 2023. “Generative AI: A Game-Changer Society Needs to Be Ready For.” https://www.weforum.
+                      org/agenda/2023/01/davos23-generative-ai-a-game-changer-industries-and-society-code-developers/.
+                31	   “과기정통부, LG·SK·네이버와 초거대ai 경쟁력 제고방안 논의, 코리아타임스.” 2023. https://www.koreaittimes.com/news/articleView.
+                      html?idxno=119700.
+                32	   “Ai 무한 경쟁시대...한국은?” 데일리굿뉴스, 데일리굿뉴스.” 2023, https://www.goodnews1.com/news/articleView.html?idxno=416252.
+
+
+
+
+34   Emerging Technologies Curation Series | Generative Artificial Intelligence
+In 2023, the Ministry of Culture, Sports, and Tourism formed the AI Taskforce for Digital
+Contents Sector, consisting of nine experts from the public and private sectors to respond
+to use of generative AI in the digital contents industry. The task force plans to build and
+distribute 25 types of high-quality Korean text corpus, comprising about 120 million words,
+to develop the Korean version of ChatGPT. The plan includes development of a pilot program
+to evaluate the system to verify whether the generative AI model understands Korean and
+has knowledge of Korean society and culture.33
+The Korean government announced that it plans to increase the number of companies
+using AI from 1 percent as of January 2023 to 30 percent by 2030 and foster more than 100
+globally competitive AI companies. The Ministry of Trade, Industry, and Energy (MTIE) held
+the Industrial Digital Transition Committee and established an industrial AI internalization
+strategy focused on internalizing AI technology and expanding industry applications, which
+have mostly been limited to finance and administrations.34
+
+
+
+
+Private Sector Initiatives
+                                  KAKAO
+                                  Kakao is a Korean Internet company that provides a diverse set of
+                                  services, including entertainment, fashion, finance, investment, trans-
+                                  portation, and others. The company is known for Kakao Talk, a free
+                                  mobile instant messaging application for smartphones that offers
+                                  text and call features similar to WhatsApp. Kakao is set to create a
+                                  10 billion won fund by June 2023 to establish an ecosystem for AI
+                                  startups. Kakao launched Karlo, a generative AI technology that it
+                                  developed based on image-generation AI models developed by Kakao
+                                  Brain, Kakao’s research subsidiary.35
+                                  Kakao Brain released KoGPT, a generative AI service, in 2021 based on
+                                  OpenAI’s GPT-3 model; an advanced version will be released based
+                                  on GPT 3.5.36 Kakao Brain has also released minDall-E, a large-scale
+                                  AI system.37
+
+
+
+
+33	   “‘한국어 잘하는’ K-챗GPT 만든다...올해 고품질 말뭉치 1억2000만 어절 공급.” 서울경제. 2023. https://www.sedaily.com/NewsView/29LUMGTUJ1.
+34	   “2030년까지 AI 활용기업 30%로 늘린다... 공급기업 100개 이상 육성.” 세계일보. 세계일보. 2023. https://www.segye.com/
+      newsView/20230113507585.
+35	   Ko Min-suh and Han Yubin. 2023. “Kakao to Create $7.6mn Fund to Support AI Startups—Pulse by Maeil Business News Korea.”
+      https://m.pulsenews.co.kr/view.php?year=2023&no=160078.
+36	   Baek Byung-yeul. 2023. “Kakao to Release Generative AI Models.” Korea Times https://www.koreatimes.co.kr/www/
+      tech/2023/03/133_346465.html.
+
+37	   “minDALLE-E on Conceptual Captions.” 2021. https://github.com/kakaobrain/minDALL-E.
+
+
+
+
+                                                                                                                                 VIII.AI in Korea   35
+                                                   NAVER
+                                                  Naver is a Korean online platform that the Naver Corporation launched
+                                                  in 1999 that was introduced as the first web portal in South Korea
+                                                  to develop and use its own search engine.38 Naver became the third
+                                                  company to introduce its own large-scale language model with
+                                                  HyperCLOVA, after OpenAI’s GPT-3 and Huawei’s PanGu-α. According to
+                                                  Naver, HyperCLOVA was processed with 50 years of Naver articles; the
+                                                  amount of Korean language-based dataset that HyperCLOVA learned
+                                                  is 6,500 times as large as that of GPT-3.39 By advancing from the
+                                                  existing development method that relied on developer expertise,
+                                                  CLOVA provides a service that allows anyone to develop and tune
+                                                  AI through HyperCLOVA, which has already learned a considerable
+                                                  amount of data.
+
+
+
+
+                38	   NAVER Company. https://www.navercorp.com/en/naver/company.
+                39	   “As AI War Rages, Korea Seeks a Place among Giants.” 2023. Korea joongAng Daily https://koreajoongangdaily.joins.com/2023/02/08/
+                      business/tech/Korea-ChatGPT-AI/20230208191532013.html.
+
+
+
+36   Emerging Technologies Curation Series | Generative Artificial Intelligence
+

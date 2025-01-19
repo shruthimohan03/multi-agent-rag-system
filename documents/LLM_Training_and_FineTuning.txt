@@ -1,0 +1,18 @@
+
+    LLM Training and Fine-Tuning
+
+    1. Training an LLM
+    - Training a large language model requires large datasets, computational power, and time. Models like GPT-3 are trained 
+      on diverse datasets containing a large variety of text from books, websites, and other content.
+
+    2. Pre-training vs Fine-tuning
+    - Pre-training is the initial phase where the model learns patterns and structures in data. Fine-tuning is the next phase 
+      where the model is tailored to a specific task or domain.
+
+    3. Transfer Learning in LLMs
+    - LLMs benefit from transfer learning, which involves fine-tuning a pre-trained model on a smaller dataset specific to the 
+      target task or domain.
+
+    4. Challenges in LLM Training
+    - Training LLMs involves dealing with challenges like data bias, high resource requirements, and difficulty in explainability.
+    

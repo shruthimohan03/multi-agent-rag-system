@@ -1,0 +1,259 @@
+[Title slide 1. Blue CAI company logo with tagline “We power the possible” appears in middle of screen. Company website www.cai.io appears at the bottom center of the screen] 
+
+[Title slide 2. Multi-color background with text centered in the middle of the screen that reads: “Virtual Event: The 3 Cs of Intelligent Automation: Generative AI: Ethics, black boxes, explainability”. The white CAI company logo appears underneath of this text towards the bottom of the screen]
+
+[Two speakers appear on screen. Christina Kucek, CAI, is on the left and Christian Ventrigila, CAI is on the right.]
+
+00:00:07 - 00:00:53
+Christina Kucek
+Hello, and welcome to our latest session in a new series of 30-minute CAI learning sessions, The 3 Cs of Intelligent Automation. Why do we call it 3 Cs of Automation? First, this series is brought to you by CAI. We're a global technology services company with a 40-year history of combining our dual strengths of talent and technology to deliver lasting results across the public and commercial sectors. The second 2 Cs represents your hosts for the series. I'm Christina Kucek, executive director of Intelligent Automation at CAI, and this is my colleague, Christian Ventriglia, UiPath architect at CAI and UiPath MVP.
+
+00:00:54 - 00:01:32
+Christian Ventriglia
+The purpose of the learning series is to get under the covers on all things intelligent automation, practical use cases for automation and technology advancements that drive efficiency and increase productivity. So sit back, grab a beverage and learn how to hyper charge your automation team with tips and tricks from our expert guests. If you have questions, we encourage you to ask them in the chat. We will try to get to all your questions as they come up during the session. If at any time you want to learn more, visit our website at cai.io for articles, client success stories or to set up a discussion with someone on our team.
+
+00:01:33 - 00:02:03
+Christina
+Welcome, everyone, to today's automation learning session event, Generative AI:Ethics, black boxes and explainability. My name is Christina Kucek. Briefly about me, my responsibilities are assisting clients with their automation journey from building automation teams for RPA and document extraction to machine learning and artificial intelligence. Our solutions drive efficiency, cost savings and a competitive advantage. With me is my co-host, Christian Ventriglia.
+
+00:02:04 - 00:02:37
+Christian
+My RPA journey began nearly 6 years ago with a request from my manager to research an emerging technology called robotic process automation. Fast-forward to today, I am a USN certified RPA solution architect with a passion for helping clients drive innovation using intelligent automation. I have a demonstrated history of delivering solutions across various business units. And I'm currently passionate about integrating machine learning and AI capabilities into the digital robotic workforce.
+
+00:02:38 - 00:02:54
+Christina
+All right. Let's get started. In today's 30-minute discussion, we're going to talk generative AI, Ethics, black boxes and explainability with James Duez and Matt Peters. Let's go ahead and introduce them.
+
+[Another speaker appears on screen, James Duez, Rainbird.AI appears below Christina and Christian in the center of the screen.]
+
+00:02:55 - 00:03:25
+Christian
+James is the co-founder and CEO of Rainbird Technologies. He is a results-driven strategist with nearly 30 years experience building highly successful and disruptive tech companies. James is recognized as one of Grant Thornton's Faces of a Vibrant Economy and a contributor to the Forbes Technology Council. He has also been entrusted to advise state departments including the UK Ministry of Defense and the US Department of Defense.
+
+[The final speaker appears on screen, Matt Peters, CAI, appears now to the left of James, below Christina and Christian. All four speakers are on screen.]
+
+00:03:26 - 00:03:56
+Christian
+Matt serves as CAI's chief technology officer and is responsible for enterprise technology, infrastructure, security, operations and all technical consulting practices. Matt continuously searches for new, innovative technologies that can enhance the company's planned future growth and scale, as well as our clients. Matt is also a contributor to the Forbes Technology Council and has experience speaking at many conferences and webinars.
+
+00:03:57 - 00:04:18
+Christina
+And thank you all for being here with us today. Now let's get started. ChatGPT, large language models, generative AI and ethics about AGI, these are our favorite topics right now. Matt, could you explain what all the hype is about and why LLMs and generative AI are such a game changer?
+
+00:04:19 - 00:05:11
+Matt Peters
+Yeah. And thanks for having me. This is one of my favorite topics too. I'd say as far as hype goes right now what we're really seeing is just the net effect of ChatGPT doing an unprecedented job of making access to an LLM widely available across the globe. So the hype is really tied to the opportunity for organizations and individuals to try out an AI technology in a way that was not really accessible for them before and to start treating it more like a proving ground for things that they might be able to do at a more commercial grade later on further down the line. But I think that just the general enthusiasm, the newsworthiness of it has really driven a lot of attention and has sort of forced everybody to get excited about it, because if you're not, you're getting left behind.
+
+00:05:12 - 00:05:57
+Matt
+But that's different from it being a game changer, which to a degree I would argue it certainly is, but that implies that this is brand new technology that we've never been exposed to before, and it's not. The novelty is really just that ChatGPT trained their model on the entire world and then made it available to the entire world. It's not net new tech that really breaks the barriers of anything that we had before beyond probably just spending some extra money on compute. But I think what this starts to do is now that you merge the hype with the fact that this is a very capable technology, what makes it a game changer is it extends the spectrum of what, I'll make up the word, automatability of business processes for organizations.
+
+00:05:58 - 00:05:06:32
+Matt
+So if I think about going way back to when we started trying to automate a lot of things, an easy example is an Excel macro. It did some of the work for the user, but it was localized to the application. And then we had larger process workflow automations that again had narrow boundaries around what they could touch were another advancement forward. Fast-forward, again, we introduced UI level robots into the mix. So now you bring that macro type of logic to any application because they can use it if we can, but they couldn't really solve every problem, deal with every challenge. There was a lot that still couldn't be automated.
+
+00:06:33 - 00:07:12
+Matt
+Now, enter generative AI solutions that can start taking on some of the responsibility of interpreting intent and broadening the scope of what's now able to be addressed by a robot. And you really start to look at game changing capabilities where now we can solve for much more complicated, long-running processes that used to really have to require a huge amount of human in the loop and are now able to be done faster or more efficiently through human supervision as opposed to massive amounts of human execution. So I think when we talk game changer, in my mind, that's the game that we're changing.
+
+00:07:13 - 00:07:54
+Christina
+Yeah. 100%. I saw this statistic today. Statistics are slippery, but time it took reach 100,000,000 million users. It took Instagram 2.5 years. It took ChatGPT 2 months. So we're talking about a game changer and the hype. Really interesting statistic. So large language models are trained using machine learning and deep learning algorithms, which is incredibly powerful, but creates what we've been referring to as a black box. Christian, you've even seen this while training UiPath document understanding machine learning models, right?
+
+00:07:55 - 00:08:39
+Christian
+Yeah. That's correct. So with the document understanding models, the way that it works is we're in control of the input data that we feed the model. So we typically curate, work with the business to curate collections of their certain document type, and then we feed that to the model, we'll run a pipeline. Then that's what actually at the end the output is a skill that we use, the robot's used to do extraction of different document types. What becomes a problem is that what's going on behind the scenes of that pipeline run becomes difficult to explain because it's almost a black box, like we've kind of said. We would refer to it as kind of AI magic going on behind the scenes generating our AI skill. And that's great, and most of the time it works wonderfully, does what we need.
+
+00:08:40 - 00:09:28
+Christian
+The problem comes when the robot doesn't extract something in the same fashion which it was trained, and now the business wants to know, "Okay. Well, why didn't it get that?" And it becomes tough to explain because my role as a developer was only feeding the model, not necessarily understanding the behind the scenes of what was happening with the data which I fed it. And so that explainability becomes a bit of a problem. And so it's interesting because a question actually for Matt, I imagine that this is one of the big challenges to getting green light with AI solutions at the enterprise level, is the lack of explainability and being able to need to understand where answers are coming from. Could you speak a little bit to the challenges of explainability in LLMs?
+
+00:09:29 - 00:10:06
+Matt
+Yeah. I mean, think that that is one of the major factors that are inhibiting a lot of organizations from faster adoption of this technology right now. And we see in the news more and more right now there are organizations that are effectively banning the use of generative AI solutions for fear of content being released into the wild in violations of intellectual property rights, but then the other side of it is that we don't know how it's doing what it's doing and therefore we cannot really trust the outcome. So I think there's always ambition when we introduce a new automation technology.
+
+00:10:07 - 00:10:37
+Matt
+This is no different than when we put RPA in place. And as a consultancy that dealt with RPA, we talked to customer after customer who just wanted... "I want to get the humans out of the mix. Let the robot do the work." Well, we want that in theory from AI as well right now, but we can't have it because it's not safe. It needs to be supervised and confirmed by humans that still know what's going on. And there there's a lot of necessary complexity to giving an organization the opportunity to deploy a lot of those models.
+
+00:10:38 - 00:11:28
+Matt
+Now that said, I don't mean to imply that all AI models are built the same. They are not. When we talk about the ones that are prominent in the news, those are very black box. If we use ChatGPT as the example, it was trained on allegedly everything. We don't know what all data it was exposed to in order to reach the capability level that it has. Allegedly no one does. We also now are entering into a phase where the black box AI solutions are incorporating plugins from third parties. So now I have a whole other layer of abstraction that I don't understand. And this is simply a design and implementation decision that was made. We weren't meant from out of the gate to understand exactly how ChatGPT was working. It was a tool for us to use.
+
+00:11:29 - 00:12:19
+Matt
+And so I know when I query it, it's using any of the 2 dozen plugins that I've enabled for it as it sees fit in order to better answer a question, but I don't know and I don't get evidence of when one is being used, when one is not, what all references or resources do I have to crosscheck in order to confirm output. So really those limitations really kind of force me to rein in the complexity of business problems that I would try to solve with this tool or the potential risk to solving any particular problem. So now I'm really living in a world where as an organization that wants to deploy this kind of tech with respect to specific platforms like a ChatGPT, I really have to rule a lot of things out, because I can't account for them, I can't jettison the liability of how that solution made a decision to the solution itself.
+
+00:12:20 - 00:12:40
+Matt
+Accountability, responsibility, liability, all still live with us and we have to be able to take responsibility for whatever actions we allow an AI platform to execute. So some tech in that space makes that very challenging for an organization to do. Some is really designed exactly to that end and is ideal for those kinds of scenarios.
+
+00:12:41 - 00:13:01
+Christina
+Yeah. And this is exactly why we wanted to bring James in to talk to us about Rainbird, because when I have to answer those questions, "Why did the solution make the decision that it made?" and I can't answer the question, that's a real problem. It's hard for our business users to swallow and feel comfortable with confidence.
+
+00:13:02 - 00:14:00
+Christian
+And I also think too that that's why you'll notice even now you're seeing new job titles coming out, AI prompt engineers. And I think part of that is because while the AI itself is very powerful, people are realizing that at the end of the day still we need humans to reign it in, keep those guardrails in place and be able to cognitively say, "Okay. This is a very valuable answer and I can use this," or, "It's nonsense and I can't use it." And so it's really interesting to see that career kind of stem out of this new, they call it whatever, the fifth or sixth industrial revolution now with this new technology. So yeah, I think that's really interesting. James, so why don't we speak a little bit more about how Rainbird has a way to kind of fix that black box problem and allow business users not only to examine decisions but also modify or kind of fine-tune those decisions? So can you explain your solution and how does Rainbird kind of solve this explainability problem for business partners?
+
+00:14:01 - 00:14:53
+James Duez
+Yeah. Absolutely. Thanks for having me on. So I think everybody has to be super clear that machine learning solutions, which includes large language models like GPT4, are making statistical predictions. There is no judgment within these models. That is not even knowledge. There's just data. They can be right but look wrong or they can be wrong and look right. And because they're not explainable, that lack of explainability, how do you know the difference? Well, you know the difference if you're the expert in the domain that you're asking a question about. You have to be the expert to determine if the output could be trusted. In short, you're bringing judgment to the equation. An LLM can draft content. It can even bring creativity to that process. But one person's creativity is another person's mistake. You bring the judgment. You can't rely on it to do well outside of your own domain of expertise.
+
+00:14:54 - 00:15:51
+James
+Now Rainbird is what's called a symbolic AI platform. It doesn't require large amounts of data to train models. It doesn't even use machine learning. Instead, it's based on modeling knowledge and expertise. It's a different type of machine intelligence. It's actually one that was all the rage in the 1990s, which some would say was the last time AI was interesting, because it comes in these summers and these winters. Now it does this using something called knowledge graphs, which are maps of knowledge over which a machine can reason. It's actually a direct parallel to the way we as people make decisions. We have all kinds of knowledge in our heads, kind of a map of what we believe to be true, which we might call broadly core rules and we'll use these to reason over data and make decisions. And when Rainbird makes a decision, it does so holistically like we do. It kind of constantly looks at everything it knows, and if it doesn't have all the data it needs, it devises questions for a human in any language to get more data just like we do.
+
+00:15:52 - 00:16:26
+James
+So it's a logical process and one that leaves an audit trail. So when Rainbird makes a decision, it can explain its entire chain of reasoning. And that's something that no machine learning technology can do. So if you think of machine learning and LLMs as black box models, as we said, you can perhaps think of Rainbird as making glass box models. We can see how these models work. We can adapt them. We can test them. We can knock out bias and then deploy them. And we trust them because each decision is explainable. And of course trust is critical to adoption.
+
+00:16:27 - 00:17:15
+James
+I think maybe just one quick final point, because I think this is what's really cool. Large language models may make predictions, but they're also very good at understanding language or instructions. And everybody knows that LLMs like ChatGPT can create content. They can write stories, draft letters, but they can also write code. And that code can include Rainbird symbolic models. So you don't even need to be able to code these symbolic models. We can ask a black box AI, but frankly you can't really deploy in the enterprise because it's not explainable, but get it to create a glass box AI that is explainable. And that's a massive... Fills massive gap between the enterprise's desire to deploy more of these tools and their ability to actually go and do so. And that's really the gap that Rainbird fills.
+
+00:17:16 - 00:17:58
+Christina
+I feel like we're in the future all of a sudden. So you said a few things that really got my wheels spinning. Not having large quantities of data being a requirement to build the logical maps. That's huge. We really struggle sometimes getting samples and getting data sets that are really representative and current for our clients. So that really solves a possible problem for us. Auditing. The auditability was music to my ears because I know that's something that all of our clients require. And then I love the term glass box, because it gives you that visibility. I really like the way you phrased that. That makes a lot of sense to me.
+
+00:17:59 - 00:18:44
+Christian
+And I thought it was interesting how you mentioned bias because bias is really I feel like a big topic that comes into play when we're talking about AI ethics, which is obviously probably a whole separate field in itself, is applying ethics to artificial intelligence. And I think the importance behind that glass box approach is the ability, as you said, to eliminate as best we can that bias, because we can get down to the source and see why the decision is being made in that fashion. And so I guess how does bias affect AI? And why must we consider it? Naturally humans are biased. So obviously AIs are going to be biased. But why do we need to take that into consideration? And I ask that question to James and then, Matt, if you have any kind of feedback as well.
+
+00:18:45 - 00:19:34
+James
+Yeah. Sure. This is a huge area. There are layers of ethical considerations, not least of all the macro question around how AI is going to continue to change the nature of work. I mean, that's a tough one to tackle. So maybe I'll just say one thing on that, which is any question of trying to slow this progress just kind of won't work. It's rather mute. Humans have been seeking ways of taking away the heavy lifting of human work since the Stone Age, so it's not going to stop. Now. I would say though, however, that OpenAI have said GPT5 is not around the corner. The capability that we have now is kind of maxed out. We need to find new ways of making progress that are beyond this. And so we have to be rest assured that AI isn't going to replace us. Somebody who uses AI might.
+
+00:19:35 - 00:20:26
+James
+But I was speaking to an analyst just yesterday and they were saying 40% of their inquiries are about how we can governance these large language models. It's become the single most important question. But I think when most people focus on the ethics of AI, they're focused on the micro issues of, as you say, of bias in predictive models. There's bias in almost all data. So if we train machine learning models on that data, that bias is going to come out in the predictions. There are over 500 types of separately identifiable research bias. It's not hard to understand, but it can be very hard to stamp out, particularly with machine learning. I mean, very simple example would be if we were to ask a machine learning model to look through LinkedIn for suitable CEO candidates, it's going to be biased for men and against women because they're more prevalent in the training data. Now a human being knows that's wrong. You could simply-
+
+00:20:27
+Christina
+Right. Obviously.
+
+00:20:27 - 00:20:47
+James
+Yeah. You could just encode and say, "That's not fair," and you could do that in a symbolic model and provide a layer of governance. And this is what we're heading towards really, is a neuro-symbolic future where we can leverage machine learning, but we respect that as a prediction and we bring a symbolic layer of judgment over the top in kind of a hybrid way.
+
+00:20:48 - 00:20:49
+Christina
+Wow. That's fantastic. [unintelligible 00:20:50]
+
+00:20:50 - 00:21:39
+Matt
+No. I think that's an excellent point. And I think there's also a layer right now where when we're fielding inquiries as an organization about AI and specific to bias, I think there's a general misunderstanding among a lot of people about what exactly we mean by bias when we're talking about machine learning models. And James's answer is exactly mathematically and scientifically correct. We apply a little bit of extra weight to bias as human users and we think of it as an exclusively bad or malicious thing. I think a lot of the time we use it analogously with prejudice. And they are not one and the same, especially in this context. So it's important for people to understand that the presence of bias in a model does not negate the value of the model entirely. It's to James's point. We need to control for it. We need to be capable of acknowledging it. And we need to have ways of dealing with it.
+
+00:21:40 - 00:22:03
+Matt
+A long-term goal to drive bias to zero before we can deploy any kind of a model is probably unreasonably ambitious and not really the objective, because as you said, it's tied to the data that we have available to feed it. We have a wide array of problems to solve if we want to get bias to zero. And I don't see that as entirely practical.
+
+00:22:04
+Christina
+Yeah. Good point.
+
+00:22:05 - 00:22:15
+Christian
+Sure. Humans are always going to be biased and humans typically are generating some of that data. And so I feel like at the end, that bias comes from a human standpoint too, so...
+
+00:22:16 - 00:22:44
+Christina
+Yep. Absolutely. Well, I think we should touch on sending data to ChatGPT, because I hear about it constantly from clients, from people reaching out. I mean, UiPath and Rainbird can both leverage ChatGPT, but there are certainly some data privacy concerns, right? James, can you explain, because Rainbird can interact with ChatGPT, GPT4, how do we leverage those tools without as much risk?
+
+00:22:45 - 00:23:10
+James
+Okay. So let me tackle the ChatGPT thing first. So there's lots of privacy concerns around ChatGPT, because depending on your territory, you're sending data out of jurisdiction. That's particularly important. I'm in Europe right now because of the GDPR regulations. But ChatGPT, their terms of service also make it very clear that what you give it is being absorbed into its model. You're paying $20 for something, you are the product. It's able to absorb what you give it.
+
+00:23:11 - 00:24:03
+James
+But let's look beyond ChatGPT and even GPT4 and the model behind it. There are many more large language models available. And actually the open source community has moved incredibly fast with models like Dolly and there are others. Some of these models are smaller, but actually easier to tune to specific needs. Rainbird uses GPT4, so not ChatGPT. If you use Rainbird, its co-author function to instruct the kind of model you want to build or you give it documentation or data, it's using the GPT4 APIs, which don't ingest that data. But soon we'll be using more tightly integrated large language models on our infrastructure that avoid sort of these jurisdictional issues. And these smaller models look like they can actually outperform some of the larger ones for specific tasks, particularly using something like a large language model to create the sorts of forms of AI that we build.
+
+00:24:04 - 00:24:28
+James
+And I think one more critical point, with Rainbird, you're only using a large language model to create your glass box model. Once you have done that, you have the option to deploy and run your glass box model with no reliance on the large language model. It becomes something that is going to behave in the way that you want it to behave. It's yours. And so that has an advantage. We're leveraging it as an authoring tool rather than relying on it at runtime.
+
+00:24:29 - 00:24:59
+Christina
+That's great. A lot of our clients talk about using large language models, but one of the points that you touched on was there's several hundred, especially the open source community has really embraced large language models. It sounds like using a smaller model that can be customized to your data might be a more appropriate solution. Matt, can you share some of your thoughts on that? And then same question to James?
+
+00:25:00 - 00:25:36
+Matt
+Yeah. I mean, I think we're still in a world where we need to use the right tool for the job in any situation. So I think we'll find that there are certainly a lot of doors and elements of workflows that we can automate, that large language models introduce to us, that are worth our consideration, but we're not going to undo a lot of the automation work that's already self-sufficient and handles a lot of back office processes. We don't need to re-engineer a whole lot just because there's so much excitement and enthusiasm around large language models right now.
+
+00:25:37 - 00:26:24
+Matt
+And so I think we're still in a place where we're going to find that the breadth of availability of some of these LLMs gives everyone that little playground space where they can get comfortable, they can start to be creative about how they might be able to leverage it in specific scenario, but it's not how they're going to solve the problem organizationally or at a commercial grade. It's really just a jumping off point as a kind of minimum viable product, proof-of-concept that, yeah, in theory, this approach will work. Now I need to either... As James did. I need to deploy ChatGPT... I'm sorry. GPT4 locally, consume it directly and build my solution around that, or I need very purpose-built solutions like Rainbird to handle the specific business problem that I'm trying to solve.
+
+00:26:25 - 00:26:49
+Matt
+I don't think that the introduction of LLMs into the national and the global dialogue all of a sudden really means that we start just doing everything with them from this point forward. It's much more that it gives us a good point of evaluation that we didn't have before. And I think we'll see that that will accelerate innovation and adoption, but it's not the whole answer.
+
+00:26:50 - 00:27:43
+James
+Yeah. I'd agree with Matt on that entirely. Despite the desire to deploy more AI, it's very hard for enterprises to safely deploy and leverage particularly GPT4, but other LLMs as well in the enterprise, especially at the moment. I think there is going to be a role for on-premise or more tightly trained LLMs in the enterprise, but for now, the best way of leveraging this new category is to see them as one more building block in the automation toolkit, leverage them to build and deploy symbolic models that are already driving complex decision making for some of the largest companies in the world. I mean, these symbolic models are already driving decisions for some pretty big organizations. LLMs makes it much... It democratizes the ability to do that. It makes it much quicker. And I think that's a significant step forward. But I think enterprise will take LLMs piece by piece and take it slowly, I think.
+
+00:27:44 - 00:27:46
+Christina
+Great. Thanks.
+
+00:27:47 - 00:28:09
+Christian
+So one thing too that I think is important and worth discussing, so all of these AI models, at the end of the day, none of these are really set it and forget it. Obviously, it's something that we need to continuously tune and train kind of as our business changes, as our needs change. James, how can Rainbird help with that, with keeping AI models up to date? Can you speak to that a little bit?
+
+00:28:10 - 00:29:09
+James
+Yeah. Sure. So Rainbird has the ability to easily update models. Maybe I'll give you a practical example. One of our projects saw us create a risk assessment tool for the UK National Health Service, the NHS. And this was designed to surface your risk of injury through contracting COVID based on a number of factors, including you entire medical history. So it's a complex, non-linear judgment. Now, during the pandemic, this model is actually built in 2 or 3 days. It went live in 8 days, including going through clinical approval. It was very quick. But interestingly, it was actually updated sometimes more than once a day because there was new evidence coming. And because Rainbird includes a lot of automated testing functionality and version control, it was effortless. If the BMI threshold has changed for where you're a COVID risk, you just tell it the one or 2 things that are new. And because it's based on these maps, it just handles all of the downstream implications of change for you automatically.
+
+00:29:10 - 00:29:27
+James
+It's a really easy way of being able to handle this constant pace of change, get all your change management in one place, manage your rules centrally. And that's very difficult to do when you're in the machine learning or LLM world.
+
+00:29:28 - 00:30:29
+Christina
+That's great. I remember when we talked about this. I think, Matt, you and I were talking about this previously. And I remember you describing the capability of Rainbird was providing predictability, consistency and auditability. A light bulb really went off for me at that point because I was thinking about all the use cases. I always think use cases. Like banking, if I get rejected for the loan that I need in order to get my dream house in the right neighborhood, I'm going to want to know why. I'm going to want somebody to be able to explain to me why did I get rejected. A benefit, if it's something in healthcare, gets rejected, I'm going to want to know why was this rejected. And it can't just be you have an LLM making some decisions based on some data that we pump in there or an AI solution or what have you. There needs to have that auditability. So I'm very excited about this tool and the implications for our clients.
+
+00:30:30 - 00:30:50
+Matt
+And I think that's also... That's not just limited to the impact that that has on your satisfaction or experience as an end user. There are also big scenarios where there's a legal obligation to be able to justify and explain the decision that was made and there's no option to deploy a technology that cannot assist in doing that.
+
+00:30:51
+Christina
+Right. Absolutely.
+
+00:30:52 - 00:30:54
+Christian
+Now unfortunately.
+
+00:30:55 - 00:30:56
+Matt
+And honestly I'm hoping that requirement doesn't go away.
+
+00:30:57 - 00:31:03
+Christina
+Yeah. 100%. [unintelligible 00:31:00] and landing, all of those types of laws, they're important.
+
+00:31:04 - 00:31:16
+Christian
+Excellent points. But unfortunately our time is over for today. It's been an absolute pleasure chatting with all of you, especially James and Matt. I'd also like to thank our audience for your attention and participation.
+
+00:31:17 - 00:31:58
+Christina
+Well, we hope you'll take away these 3 key lessons today. Adding LLMs to your organization can create tremendous value but planning for privacy, security are critically important. The black box is a problem for implementing these solutions, and Rainbird is a tool that creates a glass box scenario which gives your business users the tool they need to be confident using an LLM. And thirdly, sometimes a large language model isn't necessary. A smaller custom model can be created to solve the business problem more affordably.
+
+00:31:59 - 00:32:26
+Christian
+Later we'll be sending everyone that attended a recording of the event to share with your colleagues or peers. In the meantime, if we didn't get to your question and you're interested in learning more about CAI, intelligent automation solutions or Rainbird, someone that is, please visit our website at cai.io and fill out our contact form, or you can even contact one of our team members directly on LinkedIn. Thank you very much. And have a great rest of your day.
+
+00:31:27 - 00:32:46
+Christina
+Yes. Thanks, everyone, for joining. Stay tuned for more details about our next event in the learning series coming soon. Up next, we invited special guests to discuss the convergence of AI and cognitive decision making. Remember, the chat is open. If you have any questions, we're standing by to answer your questions. Thanks, everybody.
+
+00:32:47
+Christian
+Thanks so much.
+
+00:32:48
+James
+Thank you. Bye-bye.
+
+[Closing slide 1. Blue CAI company logo with tagline “We power the possible” appears in middle of screen. Company website www.cai.io appears at the bottom center of the screen] 

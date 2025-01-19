@@ -1,0 +1,19 @@
+
+    Frequently Asked Questions about Generative AI (Text Version)
+
+    1. What is Generative AI?
+    - Generative AI refers to AI systems capable of generating new content such as text, images, videos, etc., 
+      based on learned patterns from input data.
+
+    2. What are Large Language Models (LLMs)?
+    - Large Language Models (LLMs) are a type of Generative AI specifically designed to generate human-like text based 
+      on vast datasets of text input. Examples include GPT-3, GPT-4, and other transformer-based models.
+
+    3. What are the applications of Generative AI?
+    - Generative AI can be used for various applications such as content creation (writing articles, generating poetry), 
+      image synthesis, video editing, code generation, music composition, and more.
+
+    4. What is the difference between Generative AI and traditional AI?
+    - Traditional AI typically relies on predefined rules to perform tasks, while Generative AI is designed to create 
+      new content by learning from data patterns.
+    
