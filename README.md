@@ -1,6 +1,12 @@
-# Multi-Agent Response Generator
+# Multi-Agent RAG system
 
-This project is a multi-agent response generator that uses the Groq API to generate responses based on top documents and a given query.
+This project implements a **Multi-Agent Retrieval-Augmented Generation (RAG)** system, leveraging machine learning models to retrieve relevant information from a database and use it to generate contextual responses. The system is designed for solving complex tasks by distributing workloads across multiple agents, each responsible for a specific aspect of the task.
+
+## AGENTS:
+o Agent 1: Query Parser: Analyzes user queries to extract key terms or topics.
+o Agent 2: Document Retriever: Searches the document database for relevant files.
+o Agent 3: Document Ranker: Ranks the retrieved documents by relevance.
+o Agent 4: Response Generator: Synthesizes a concise answer from the top-ranked documents.
 
 ## Setup
 
@@ -20,6 +26,7 @@ To run the Streamlit app, use the following command:
 ```sh
 streamlit run app.py
 ```
+
 
 ## Project Structure
 
