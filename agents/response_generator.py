@@ -2,7 +2,7 @@ import os
 from groq import Groq
 
 client = Groq(
-    api_key='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'
+    api_key=os.getenv("API_KEY")
 )
 from pathlib import Path
 
